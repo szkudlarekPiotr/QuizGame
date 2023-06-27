@@ -19,13 +19,13 @@ class UI():
         self.canvas.grid(column=0, row=1, columnspan=2, padx=20, pady=30)
 
         self.right = tkinter.Button()
-        self.right_image = tkinter.PhotoImage(file="./images/true.png")
-        self.right.config(image=self.right_image, command=self.right_button)
+        self.true_image = tkinter.PhotoImage(file="./images/true.png")
+        self.right.config(image=self.true_image, command=self.right_button)
         self.right.grid(column=0, row=2, pady=20)
 
         self.wrong = tkinter.Button()
-        self.wrong_image = tkinter.PhotoImage(file="./images/false.png")
-        self.wrong.config(image=self.wrong_image, command=self.wrong_button)
+        self.false_image = tkinter.PhotoImage(file="./images/false.png")
+        self.wrong.config(image=self.false_image, command=self.wrong_button)
         self.wrong.grid(column=1, row=2, pady=20)
 
         self.score = tkinter.Label()
